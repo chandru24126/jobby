@@ -1,0 +1,149 @@
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.dash-header h2 { font-size: 1.5rem; font-weight: 700; }
+.dash-header p { color: var(--text2); font-size: 0.88rem; margin-top: 4px; }
+
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.stat-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.stat-icon { font-size: 1.8rem; }
+.stat-num { font-size: 1.6rem; font-weight: 800; color: var(--primary); }
+.stat-lbl { font-size: 0.78rem; color: var(--text2); margin-top: 2px; }
+
+/* Applicants button */
+.applicants-btn {
+  background: var(--primary-light);
+  color: var(--primary);
+  border: none;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.applicants-btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 20px;
+}
+.modal {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal-lg { max-width: 680px; }
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.modal-header h3 { font-size: 1.1rem; font-weight: 700; }
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--text2);
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.modal-company { font-size: 0.85rem; color: var(--text2); margin-top: 4px; }
+
+/* Applicant cards */
+.applicants-list { display: flex; flex-direction: column; gap: 14px; }
+.applicant-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  transition: all 0.15s;
+}
+.applicant-card:hover { border-color: #c3d9ff; }
+.applicant-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.applicant-avatar {
+  width: 40px; height: 40px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1rem;
+  flex-shrink: 0;
+}
+.applicant-info { flex: 1; }
+.applicant-info h4 { font-size: 0.92rem; font-weight: 600; }
+.applicant-info p { font-size: 0.78rem; color: var(--text2); }
+.applicant-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.status-select {
+  padding: 5px 10px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.78rem;
+  color: var(--text);
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.status-select:focus { border-color: var(--primary); }
+.applicant-resume {
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  color: var(--text2);
+}
+.applicant-resume a {
+  color: var(--primary);
+  word-break: break-all;
+}
+.applicant-resume a:hover { text-decoration: underline; }
+.applicant-cover {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+.applicant-cover strong { font-size: 0.78rem; color: var(--text2); }
+.applicant-cover p { font-size: 0.82rem; margin-top: 4px; color: var(--text); }
+.applicant-date { font-size: 0.75rem; color: var(--text3); }

@@ -1,0 +1,94 @@
+.jobs-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.jobs-sidebar {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  position: sticky;
+  top: 80px;
+}
+.sidebar-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text2);
+  margin-bottom: 10px;
+}
+.sidebar-section { margin-bottom: 20px; }
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text);
+  padding: 4px 0;
+  cursor: pointer;
+}
+.filter-option input { accent-color: var(--primary); }
+.jobs-main { min-width: 0; }
+.jobs-header { margin-bottom: 16px; }
+.jobs-header h2 { font-size: 1.1rem; font-weight: 700; }
+.job-list-card { margin-bottom: 14px; }
+.job-list-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.job-list-info { flex: 1; }
+.job-salary { font-weight: 600; color: var(--success); font-size: 0.88rem; white-space: nowrap; }
+.job-list-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+.job-date { font-size: 0.78rem; color: var(--text3); }
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 20px;
+}
+.modal {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.modal-header h3 { font-size: 1.1rem; font-weight: 700; }
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--text2);
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.modal-company { font-size: 0.85rem; color: var(--text2); margin-bottom: 18px; }
+
+@media (max-width: 700px) {
+  .jobs-layout { grid-template-columns: 1fr; }
+  .jobs-sidebar { position: static; }
+}

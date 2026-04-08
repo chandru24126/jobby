@@ -1,0 +1,7 @@
+.postjob-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  max-width: 720px;
+}
