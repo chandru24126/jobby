@@ -44,9 +44,9 @@ function Home() {
             <button className="btn btn-primary search-btn" type="submit">Search Jobs</button>
           </form>
           <div className="hero-stats">
-            <div className="stat"><strong>10K+</strong><span>Jobs Posted</span></div>
-            <div className="stat"><strong>5K+</strong><span>Companies</span></div>
-            <div className="stat"><strong>50K+</strong><span>Job Seekers</span></div>
+            <div className="stat"><strong>100+</strong><span>Jobs Posted</span></div>
+            <div className="stat"><strong>54+</strong><span>Companies</span></div>
+            <div className="stat"><strong>1000+</strong><span>Job Seekers</span></div>
           </div>
         </div>
       </section>
